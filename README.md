@@ -1,4 +1,4 @@
-#Meteor is a JavaScript App Platform to write full stack applications
+#Meteor is a JavaScript App Platform to write full stack web apps
 
 
 ###
