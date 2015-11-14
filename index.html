@@ -1,0 +1,27 @@
+<head>
+  <title>Attendance</title>
+</head>
+
+<body>
+  <h1>Welcome to CPSC 254 Open Source!</h1>
+
+  {{> loginButtons}}<br>
+  <!-- Displays Login button from accounts-ui and accounts-twitter -->
+
+  <p>Follow these rockstar programmers!</p><br>
+  {{> people}} <!--Renders people template (line 13 )-->
+
+  <span class="copyright">Copyright &copy; Jose Tizol 2015</span>
+</body>
+
+<template name="people">
+  {{#each twitterUsers}}   <!--Iterates over Meteor.users Collection (template helper defined in attendance.js)-->
+    {{> twitterUser}} <!--Renders twitterUser template for each user-->
+  {{/each}}
+</template>
+
+<template name="twitterUser"> <!--Scope is defined to each user-->
+  <img src="{{services.twitter.profile_image_url}}" > <!--Grabs profile image url from collection-->
+  <a target="_blank" href="https://twitter.com/{{services.twitter.screenName}}">@{{services.twitter.screenName}}</a><br>
+</template>
+<!-- meteor deploy cs254.meteor.com -->
