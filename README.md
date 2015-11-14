@@ -1,5 +1,5 @@
-#Meteor is a JavaScript App Platform to write full stack web apps
-
+### What is Meteor?
+# Meteor is a JavaScript App Platform to write full stack web apps
 
 ###
 <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Meteor-logo.png">
