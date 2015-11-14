@@ -1,4 +1,4 @@
-# Writing Web Apps with Meteor
+#Meteor is a JavaScript App Platform to write full stack applications
 
 
 ###
